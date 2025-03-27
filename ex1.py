@@ -41,15 +41,15 @@ class Graph:
 if __name__ == "__main__":
     graph = Graph()
     
-    #graph.addNode(1)
-    #graph.addNode(2)
-    #graph.addNode(3)
-    #print(graph.adjacency_list)
-    #graph.addEdge(1, 2, 5)
-    #print(graph.adjacency_list)
-    #graph.removeEdge(1, 2)
-    #print(graph.adjacency_list)
-    
-    graph.importFromFile("random.dot")
-    
+    graph.addNode(1)
+    graph.addNode(2)
+    graph.addNode(3)
     print(graph.adjacency_list)
+    graph.addEdge(1, 2, 5)
+    graph.addEdge(1, 3, 2)
+    print(graph.adjacency_list)
+    graph.removeEdge(1, 2)
+    print(graph.adjacency_list)
+    
+    #graph.importFromFile("random.dot")
+    #print(graph.adjacency_list)
